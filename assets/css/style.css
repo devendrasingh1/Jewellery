@@ -2109,17 +2109,26 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     -webkit-box-shadow: 2px 7px 16px -4px rgba(0, 0, 0, 0.25882352941176473);
     -moz-box-shadow: 2px 7px 16px -4px rgba(0, 0, 0, 0.25882352941176473);
 }
+.review_form_wrap {
+    display: inline-block;
+    width: 100%;
+}
 .review_form .radio_box label {
     display: inline-block;
     width: auto;
     margin-right: 13px;
 }
+.user_review_sec {
+    display: inline-block;
+    width: 100%;
+}
 .review_title {
     font-size: 20px;
     color: #34404b;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 0;
     margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
 }
 .review_list {
     padding: 0;
@@ -2750,6 +2759,9 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     font-size: 14px;
     text-decoration: none;
 }
+.blog_meta > a:hover {
+    color: #fd405e;
+}
 .blog_meta > a:last-child {
     margin-right: 0;
 }
@@ -2759,6 +2771,80 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     font-size: 15px;
 }
 /*======= Blog Page css End ==========*/
+/*======= Blog single css End ==========*/
+.blog_single_page .blogs_list {
+    margin-bottom: 20px;
+}
+.blog_single_page .row {
+    flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+    -moz-flex-direction: row-reverse;
+}
+.blog_comments_sec {
+    display: inline-block;
+    width: 100%;
+    box-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    margin-bottom: 20px;
+}
+.blog_reply_form {
+    display: inline-block;
+    width: 100%;
+    box-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+/*======= Blog single css End ==========*/
+/*======= Blog share css start ==========*/
+.share_post_row {
+    width: 100%;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 19px;
+    justify-content: center;
+    padding: 10px;
+}
+.share_post_row h5 {
+    margin: 0;
+    float: left;
+    padding-right: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.share_post_row .social_icon{
+    float: right;
+}
+.social_icon{
+    display: inline-block;
+}
+.social_icon a {
+    display: inline-block;
+    color: #777777;
+    font-size: 16px;
+    margin: 2px;
+    border: 1px solid #afafaf;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+.social_icon a:hover {
+    color: #ffffff;
+    border-color: #fd405e;
+    background-color: #fd405e;
+}
+/*======= Blog share css End ==========*/
 /*======= animation css ==========*/
 .fadetop{
     -webkit-animation:fadetop 1s 1;
