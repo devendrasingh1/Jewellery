@@ -2892,10 +2892,10 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     margin-bottom: 0;
     border: 1px solid #ccc;
 }
-.invoice_container .cart_tables tr td.cart_image {
+.invoice_container tr td.cart_image {
     width: 125px;
 }
-.invoice_container .cart_tables .cart_image img {
+.invoice_container .cart_image img {
     max-width: 80px;
 }
 .invoice_container table tr td {
@@ -2909,11 +2909,87 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 .invoice_container .table tr th {
     background: #fd405e;
     color: #fff;
+	border:none;
 }
 .invoice_summary{
     margin-bottom: 40px;
 }
+.succesfully_div {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #32c332;
+}
 /*======= Invoice page css End ==========*/
+/*======= order History  css start ==========*/
+.order_history_table .table tr th {
+    background: transparent;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+}
+.order_history_table table tr td {
+    color: #666;
+    vertical-align: middle;
+    border: none;
+}
+.order_history_table table {
+    margin-bottom: 0;
+    border: 1px solid #ccc;
+}
+.order_history_table table tr:nth-child(even) td {
+    background: #f5f5f5;
+}
+.action_buttons .icons {
+    background: #fd405e;
+    color: #fff;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 50%;
+    position: relative;
+    text-decoration: none;
+    margin: 0 1px;
+}
+.action_buttons .icons:after {
+    position: absolute;
+    content: attr(tooltip-data);
+    white-space: nowrap;
+    min-width: 50px;
+    top: -28px;
+    left: 50%;
+    background: #fd405e;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    text-align: center;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    line-height: initial;
+	transition:all ease-in-out 0.2s;
+	-webkit-transition:all ease-in-out 0.2s;
+	-moz-transition:all ease-in-out 0.2s;
+}
+.action_buttons .icons:hover:after{
+	visibility:visible;
+	opacity:1;
+}
+.heading_dv h5 {
+    font-size: 20px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.heading_dv {
+    margin-bottom: 15px;
+}
+/*======= order History  css End ==========*/
 /*======= animation css ==========*/
 .fadetop{
     -webkit-animation:fadetop 1s 1;
