@@ -1095,11 +1095,12 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     display: inline-block;
     text-decoration: none;
     background: #fd405e;
-    color: #fff;
+    color: #fff !important;
     text-transform: uppercase;
     font-weight: 600;
     padding: 9px 20px;
     border-radius: 2em;
+    cursor: pointer;
 }
 .header_offer_dv i {
     margin-right: 5px;
@@ -2980,16 +2981,82 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 	visibility:visible;
 	opacity:1;
 }
+.heading_dv {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+}
 .heading_dv h5 {
     font-size: 20px;
     margin-bottom: 0;
     text-transform: capitalize;
+    display: inline-block;
 }
-
-.heading_dv {
-    margin-bottom: 15px;
+.heading_dv .button_right {
+    float: right;
+}
+.heading_dv .back_button {
+    height: 35px;
+    line-height: 33px;
+    border-radius: 5px;
 }
 /*======= order History  css End ==========*/
+/*======= privacy policy css start ==========*/
+.privacy_page_contents ol li, 
+.privacy_page_contents ul li {
+    line-height: 25px;
+}
+.privacy_page_contents h5, 
+.privacy_page_contents h4 {
+    font-weight: 600;
+}
+/*======= privacy policy css End ==========*/
+/*======= accordion css start ==========*/
+.ac_panel {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 4px;
+    background: #fff;
+    border-radius: 2em;
+}
+.ac_heading {
+    display: inline-block;
+    width: 100%;
+    background: #fd405e;
+    color: #fff;
+    padding: 10px 24px 10px 10px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 2em;
+}
+.ac_heading .title {
+    margin: 0;
+    font-size: 17px;
+    color: #fff;
+    display: inline-block;
+}
+.ac_heading .ac_icons {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+}
+.ac_heading.active .ac_icons i:before {
+    content: "\f077";
+}
+.ac_content {
+    float: left;
+    width: 100%;
+    display: none;
+}
+.ac_content_body{
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+}
+.ac_content_body p{
+    margin-bottom: 0;
+}
+/*======= accordion css End ==========*/
 /*======= animation css ==========*/
 .fadetop{
     -webkit-animation:fadetop 1s 1;

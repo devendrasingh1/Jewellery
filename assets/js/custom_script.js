@@ -398,4 +398,11 @@
 		$(".test_items").removeClass("active_item");
 		$(this).addClass("active_item");
 	});
+   //accordion js start
+  	$(".ac_heading").on("click", function(){
+	    $(this).toggleClass("active");
+	    $(this).next(".ac_content").slideToggle(100);
+	    $(".ac_heading").not(this).next().slideUp(100);
+	    $(".ac_heading").not(this).removeClass("active");
+  	});
 })(jQuery);
